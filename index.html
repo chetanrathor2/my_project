@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Project</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                    <button href="#" id="last"> Login As a Vet</button>
+                    <span class="material-symbols-outlined menu" onclick="myFun()" id="menu-btn">
+                        menu
+                        </span>
+                </div>
+                <div class="navbar" id="navbar">
+                    <ul>
+                       
+                        <li> <a href="#"> For Chatities </a> </li>
+                        <li> <a href="#"> For Vets </a> </li>
+                        <li> <a href="#"> Home </a> </li>
+                        <li> <a href="#"> About </a> </li>
+                        <li> <a href="#"> Feature </a> </li>
+                        <li> <a href="#"> Team </a> </li>
+                        <li> <a href="#"> Blog </a> </li>
+                        <li> <a href="#"> Woof </a> </li>
+                        <li> <a href="#" id="last-child"> Login As Vet</a> </li>
+               
+                    </ul>
+                    
+                </div>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <div class="section-container">
+
+                <div class="section-content">
+                    <span class="section-content-text">The Ultimate Data-Led</span> 
+                    <span class="section-content-text" style="color:#EA6275;"> Pet Care <span style="color:black;">And</span></span> 
+                    <span class="section-content-text" style="color:#EA6275;"> Health Care App </span><br>
+                    <span class="section-content-text-2"> Putting Ownership In Complete Control Of
+                    <span class="section-content-text-2"> Their Pets Health </span>
+                </div>
+            <div class="btn-container"><button class="btn">Schedule Now</button></div>
+        </section>
+    </div>
+<script>
+    function myFun() {
+
+        // let outer = window.outerWidth;
+        // if(outer < )
+        let btn = document.getElementById('menu-btn')
+        let header = document.getElementById('header')
+        let navbar = document.getElementById('navbar')
+        
+        if(navbar.style.display == "block"){
+            navbar.style.display = 'none'
+            header.style.height = '100px'
+        }
+        else{
+            navbar.style.display = 'block'
+            header.style.height = '400px'
+        }
+    }
+</script>
+</body>
+
+</html>
